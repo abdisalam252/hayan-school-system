@@ -1,0 +1,62 @@
+/* ==== Global Styles for Hayan School System ==== */
+
+/* Reset some default browser styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body background and color theme */
+body {
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Navbar general look */
+nav {
+  background-color: #1e88e5;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons default style */
+button {
+  background-color: #1e88e5;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Simple container style */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Footer look */
+footer {
+  background-color: #1e88e5;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

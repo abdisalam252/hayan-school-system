@@ -1,0 +1,45 @@
+{
+  "name": "hayan-school-system",
+  "version": "1.0.0",
+  "description": "Hayan School System Monorepo",
+  "main": "main.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start:desktop": "electron .",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "install-all": "npm install && cd backend && npm install && cd frontend && npm install",
+    "dist": "npm run build:frontend && electron-builder"
+  },
+  "keywords": [],
+  "author": "Hayan Team",
+  "license": "ISC",
+  "build": {
+    "appId": "com.hayan.school",
+    "productName": "Hayan School System",
+    "files": [
+      "main.js",
+      "package.json",
+      "backend/**/*",
+      "frontend/dist/**/*"
+    ],
+    "asarUnpack": [
+      "backend/**/*"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "icon": "hss_real.ico",
+    "asar": false
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron": "^39.2.7",
+    "electron-builder": "^26.0.12"
+  },
+  "dependencies": {
+    "jimp": "^1.6.0",
+    "png-to-ico": "^3.0.1"
+  }
+}

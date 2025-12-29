@@ -1,0 +1,2 @@
+ID: 1, Bank: Commercial Bank, Account: Main Account 
+ID: 2, Bank: Ebirr, Account: Ebir For saving
